@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>登陆页</title>
+	<link rel="stylesheet" type="text/css" href="register_files/denglu-style.css">
+	<script src="register_files/jquery.js"></script>
+</head>
+<body>
+<div class="box">
+	<div class="logo">
+		<img src="register_files/dengluLogo.png">
+		<h4>使用 Smartisan ID 登录官方在线商城</h4>
+	</div>
+	<div id="oinput">
+		<form>
+			<input placeholder="手机号/邮箱" class="" type="text"><br>
+			<input placeholder="密码" class="" type="password">
+			<span class="textBg"></span>
+			<span class="passwordBg"></span>
+		</form>
+	</div>
+	<div class="tit">
+		<input id="checkbox" value="7天内自动登陆" type="checkbox">
+		<label for="checkbox"></label>7天内自动登陆
+		<div class="tit-text">
+			<a href="">注册Smartisan ID</a><span class="line">|</span>
+			<a href="">忘记密码 ？</a>
+		</div>
+	</div>
+	<button class="dengLu">
+			登陆
+	</button>
+	<div class="link">
+			<span>其他账号登陆：</span>
+			<a class="icon1"></a>
+			<a class="icon2"></a>
+			<a class="icon3"></a>
+			<a class="telLink" href="#">国际手机号登陆 &gt;</a>
+	</div>
+</div>
+<div class="copyright">
+	Copyright © 2016, Smartisan Digital Co., Ltd. All Rights Reserved.北京锤子数码科技有限公司
+	<span>|</span>
+	<a href="#">法律声明</a>
+	<span>|</span>
+	<a href="#">隐私条款</a><br>
+	<a class="copyr" href="">京ICP备14041720号-1京ICP证140622号京公网安备11010502025474</a>
+</div>
+<script type="text/javascript">
+	//each() 方法规定为每个匹配元素规定运行的函数。
+	$("#oinput input").each(function(){
+		$(this).bind("focus",function(){
+			$(this).addClass("border-on");
+		});
+		$(this).bind("blur",function(){
+			$(this).removeClass("border-on");
+		})
+	})
+</script>
+
+</body></html>
